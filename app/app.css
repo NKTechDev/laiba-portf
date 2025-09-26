@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+    background-color: black;
+
+}
+
+* {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Set a default weight */
+  font-style: normal;
+}
+
+/* Styles the scrollbar track (part the thumb slides within) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light grey background for the track */
+  border-radius: 10px; /* Optional: adds rounded corners to the track */
+}
+
+/* Styles the scrollbar thumb (the part that can be dragged) */
+::-webkit-scrollbar-thumb {
+  background: #00C9FF; /* Your theme color */
+  border-radius: 10px; /* Optional: adds rounded corners to the thumb */
+  border: 3px solid #f1f1f1; /* Optional: adds a border around the thumb */
+}
+
+/* Styles the scrollbar itself (overall part, including thumb, track, and buttons) */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the vertical scrollbar */
+  height: 8px; /* Height of the horizontal scrollbar */
+}
+
+/* Optional: Styles the scrollbar buttons (arrows at the top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {
+  display: none; /* This can disable the buttons, but you can also style them if needed */
+}
+
